@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-// import 'normalize.css/normalize.css';
+import 'normalize.css/normalize.css';
 import configureStore from './store/configureStore';
 import './styles/styles.scss';
 import AppRouter from './routers/AppRouter'
@@ -11,10 +11,11 @@ import getVisibleExpenses from './selectors/expenses';
 
 const store = configureStore();
 
+
 store.subscribe (()=> {
   const state = store.getState();
   // console.log(state);
-  // const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
+  const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
   // console.log("Visible:",visibleExpenses, state.filters);
 });
 
