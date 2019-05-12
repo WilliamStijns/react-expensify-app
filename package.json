@@ -9,7 +9,7 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
-    "heroku-postbuild" : "npm run build:prod",
+    "heroku-postbuild": "npm run build:prod",
     "test": "jest"
   },
   "author": "",
@@ -24,6 +24,7 @@
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "moment": "^2.24.0",
+    "node": "^12.2.0",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
