@@ -8,6 +8,8 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild" : "npm run build:prod",
     "test": "jest"
   },
   "author": "",
@@ -19,6 +21,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "css-loader": "^2.1.1",
+    "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
